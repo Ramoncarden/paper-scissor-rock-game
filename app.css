@@ -13,11 +13,40 @@ body {
 }
 
 .square {
-	border: 1px solid white;
+	border: 2px solid white;
 	margin: 1.50%;
 	text-align: center;
-	width: 30%;
+	width: 29.5%;
 	float: left;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 25px;
+}
+
+.message {
+  transform: translateY(150px);
+  font-size: 48px;
+  /*display: inline-block;*/
+  height: 20px;
+  /*margin: 0%;*/
+  margin-left: auto;
+  margin-right: auto;
+  /*display: inline-block;*/
+  text-align: center;
+}
+
+.square:hover:active {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  -webkit-transform: scale(1.1);
+}
+
+.score {
+  float: right;
+  margin: 6%; 
+  border: 6px solid white;
+  padding: 5px 60px;
 }
 
 #container {
@@ -31,13 +60,6 @@ body {
 	width: 50%;
 	padding-top: 100px;
 	margin: auto;
-}
-
-.score {
-  float: right;
-  margin: 6%;	
-	border: 6px solid white;
-	padding: 5px 60px;
 }
 
 #playerScore {
@@ -74,20 +96,4 @@ body {
 	margin-right: 29%;
 	padding-top: 25px;
 	color: #2b82d8;
-
 }
-
-.message {
-  transform: translateY(150px);
-  font-size: 48px;
-  /*display: inline-block;*/
-  height: 20px;
-  /*margin: 0%;*/
-  margin-left: auto;
-  margin-right: auto;
-  /*display: inline-block;*/
-  text-align: center;
-}
-
-
-

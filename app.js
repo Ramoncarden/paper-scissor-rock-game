@@ -55,15 +55,15 @@ function evaluateRound() {
   }
   else if (playerChoice === RockPaperScissorEnum.Rock && cpuChoice === RockPaperScissorEnum.Paper) {
     isGameOver = increaseCpuScore();
-    roundMessage = "You lose. Paper beats Rock";
+    roundMessage = "You lose Paper beats Rock";
   }
   else if (playerChoice === RockPaperScissorEnum.Paper && cpuChoice === RockPaperScissorEnum.Scissor) {
     isGameOver = increaseCpuScore();
-    roundMessage = "You lose. Scissor beats Paper";
+    roundMessage = "You lose Scissor beats Paper";
   }
   else if (playerChoice === RockPaperScissorEnum.Scissor && cpuChoice === RockPaperScissorEnum.Rock) {
     isGameOver = increaseCpuScore();
-    roundMessage = "You lose. Rock beats Scissor";
+    roundMessage = "You lose Rock beats Scissor";
   }
   else if (cpuChoice === RockPaperScissorEnum.Rock && playerChoice === RockPaperScissorEnum.Paper) {
     isGameOver = increaseHumanScore();
